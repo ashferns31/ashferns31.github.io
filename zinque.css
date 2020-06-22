@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.9)),url('background.jpg');
+    min-width: 50%;
+    font-family:  sans-serif;
+}
+
+.navbar {
+    background-color: #D8241A;
+    overflow: hidden;/*change done ehere by errol*/
+    font-weight: 600;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;/*change done here by errol*/
+    padding: 9px; /*thinner nav bar */
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    width: 25%; /* Four links of equal widths */
+    text-align: center;
+  }
+  .navbar a:hover{
+    transition-delay: 50ms;
+    animation-name: navbar-animation;
+    animation-duration: 1s;
+}
+
+.navbar .icon{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .navbar a {display: none;}
+    .navbar a.icon {
+        float: right;
+     display: block;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  @keyframes navbar-animation {
+    from{color:white;}
+    to{color:black;}
+}
+
+.header img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 45%;
+height: 80%;
+margin-top: 20px;
+}
+
+
+.btns{
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-us{
+    margin-right: 250px;
+}
+
+
+.vector{
+    text-align: center;
+}
+.billboard{
+    text-align: center;
+}
+.billboard img{
+margin-left: auto;
+margin-right: auto;
+margin-top: 1cm;
+opacity: 0.9;
+width: 20%;
+}
+@keyframes vector-animation {
+    from {transform:scale(1);}
+    to {transform: scale(1.2);}  
+  }
+.hovering:hover{
+    opacity: 1;
+    animation-name: vector-animation;
+    animation-duration: 2s;
+}
+
+.about{
+    margin-top: 2cm;
+    background-color:#D8241A;/*color i set same as q in zinque*/
+    color: white;
+}
+.about h3{
+   /* padding-left: 20%;*/
+    text-align: center;
+    /*padding-right: 20%;*/
+    padding-top: 20px;
+    font-weight: 600;
+    /*font-size: 40px;*/
+}
+.about p{
+padding-left: 30px;
+padding-right: 30px;
+padding-bottom: 30px;
+color: white;
+}
+
+
+.conbox{
+    /*text-align: center;*/
+    margin-top: 3cm;
+    /*padding-left: 30px;
+    padding-right: 30px; */
+    font-size: 120%;
+    font-weight: 400;
+   /* padding-bottom: 30px;*/
+}
+.imgphone{
+    float: left;
+    padding-left: 6%;
+    width: 20%;
+    animation-name: phone-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;    
+}
+.imgloc{
+    float: right;
+    padding-right: 6%;
+   /* margin-right: 6%;*/
+    width: 21%;
+    /*padding-left: 30px;*/
+    /*padding-bottom: 30px;*/
+}
+.conposition{
+    text-align:center;  
+}
+@keyframes phone-animation {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(20deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+
+.enq{
+    padding-top: 60px;
+    font-size: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*margin-top: 3cm;   */
+}
+.enqh{
+    /*text-align: center;*/
+    margin-left: 23%;
+}
+.enqimg{
+    float: right;;
+    margin-right:5%;
+    width:30%;
+}
+
+input[type=text] {
+    border: 3px solid #D8241A;
+    border-radius: 4px;
+    width: 60%;
+  }
+.messagebox{
+    height: 50px
+}
+input[type=button] {  
+    background-color:transparent;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    border: 5px solid #D8241A;
+    padding: 12px 30px;
+    text-align: center;
+    border-radius: 15px;
+    float: left;
+    margin-left: 23%;
+  }
+
+input[type=button]:hover{
+    background-color:#D8241A;   
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    animation-name: button-animation;
+    animation-duration: 1s;   
+}
+@keyframes button-animation {
+    from{background-color:transparent;}
+    to{background-color:#D8241A;}    
+  }
+
+
+.reach{
+    padding: 10px;
+    font-size: 90%;
+    margin-top: 3cm;
+    background-color:#D8241A;   
+}
+
+.welcome{
+    color: #D9D9D9;
+}
+
+.contact-color{
+    color: #D9D9D9;
+}
+
+.about-color{
+    color: #D9D9D9;
+}
+
+.enquiry-color{
+    color: #D9D9D9;
+}
+
+
