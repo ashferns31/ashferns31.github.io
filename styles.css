@@ -161,7 +161,7 @@ body,html{
   margin: 1vh auto 0 auto;
   line-height: 5vh;
   font-size: 2vh;
-  color: #1B1D1E;
+  color: black;
   font-weight: bold;
   padding: 0vh;
   position: relative;
@@ -265,6 +265,7 @@ body,html{
   color: #fff;
   top: -12vh;
   /*bottom: -9.5vh;*/
+  margin-bottom:2vh;
   width: 80%;
   height: 3vh;
   margin-left: auto;
